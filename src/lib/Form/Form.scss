@@ -1,0 +1,68 @@
+.form {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+  }
+
+  &__input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    span {
+      opacity: .7;
+      padding-left: 20px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 20px;
+    @include adaptive-font(21, 16);
+    font-weight: 300;
+    outline: none;
+
+    @include desktop {
+      padding: 20px;
+    }
+
+    &::placeholder {
+      color: #000;
+    }
+  }
+
+  &__submit {
+    width: fit-content;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    @include adaptive-font(21, 16);
+    font-weight: bold;
+    padding: 16px 20px;
+    transition: all .3s ease;
+
+    &:disabled {
+      opacity: .5;
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?vcfgve');
+  src:  url('fonts/icomoon.eot?vcfgve#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vcfgve') format('truetype'),
+    url('fonts/icomoon.woff?vcfgve') format('woff'),
+    url('fonts/icomoon.svg?vcfgve#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-whatsapp:before {
+  content: "\e908";
+}
+.icon-email:before {
+  content: "\e909";
+}
+.icon-instagram:before {
+  content: "\e90a";
+}
+.icon-telegram:before {
+  content: "\e90b";
+}
+.icon-web:before {
+  content: "\e900";
+}
+.icon-paper:before {
+  content: "\e901";
+}
+.icon-maket:before {
+  content: "\e902";
+}
+.icon-pen:before {
+  content: "\e903";
+}
+.icon-eye:before {
+  content: "\e904";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-shield:before {
+  content: "\e906";
+}
+.icon-hands:before {
+  content: "\e907";
+}

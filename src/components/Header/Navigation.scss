@@ -1,0 +1,146 @@
+.navigation {
+
+  &__list {
+    position: absolute;
+    top: 55%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: space-between;
+    transform: translate(-50%) rotate(-90deg);
+    width: 100vw;
+    max-width: 60vh;
+
+    @include desktop {
+      position: relative;
+      top: 0;
+      width: auto;
+      transform: none;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
+  &__item {
+    transform: translateY(50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 0;
+    padding: 0;
+
+    &_logo {
+      transform: rotate(90deg);
+    }
+
+    &_bold a,
+    div {
+      @include adaptive-font(18, 14);
+      font-weight: bold;
+    }
+
+    @include desktop {
+      transform: none;
+    }
+
+    .svg {
+      visibility: hidden;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(-150%, -50%);
+    }
+
+    &:hover {
+      .svg {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__item p{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: gray;
+
+    &:hover {
+      fill: black;
+    }
+
+  }
+
+  &__icon-data {
+    position: relative;
+    font-size: 10px;
+    color: gray;
+    padding-bottom: 50px;
+
+    &::after {
+      content: attr(data);
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      top: -2px;
+      color: gray;
+      opacity: 0;
+      transition: all .3s linear;
+    }
+
+    &:hover::after {
+      left: 30px;
+      opacity: 1;
+      
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    a{
+      text-decoration: none;
+      color: gray;
+
+      &:hover{
+        color: black;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-weight: normal;
+
+    a {
+      font-weight: normal;
+    }
+  }
+}
+
+.company {
+  &__list {
+    list-style-type: none;
+    margin: 0;
+  }
+}
+
+@include tablet {
+  .navigation__item-info {
+    display: none;
+  }
+}

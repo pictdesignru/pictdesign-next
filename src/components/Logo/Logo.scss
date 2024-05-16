@@ -1,0 +1,16 @@
+.logo_header {
+position: absolute;
+
+  &_pos_relative {
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media screen  and (max-width: 1023px){
+    position: static;
+    width: 80px;
+  }
+}

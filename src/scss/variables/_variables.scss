@@ -1,0 +1,38 @@
+@mixin widedesktop {
+  @media screen and (max-width: $widedesktop) {
+    @content;
+  }
+};
+
+@mixin lgdesktop {
+  @media screen and (max-width: $lgdesktop) {
+    @content;
+  }
+};
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+};
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+};
+
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+};
+
+@mixin adaptive-font ($maxSize, $minSize) {
+  $diffSize: $maxSize - $minSize;
+  $addSize: $diffSize * 1.6;
+  @media (min-width: $desktop) {
+    font-size: calc(#{$minSize + px} + #{$diffSize} * 1.7 * ((100vw - 1024px) / 1920));
+  }
+}
+

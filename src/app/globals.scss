@@ -1,0 +1,92 @@
+@import '../Vendor/normalize.css';
+@import '../Vendor/fonts/fonts.css';
+@import '../scss/variables/variables';
+@import '../scss/breakpoints/breakpoints';
+@import '../components/Card/card.scss';
+@import '../components/ProjectList/ProjectList.scss';
+@import '../scss/pageProject.scss';
+@import '../components/MainSwiper/MainSwiper.scss';
+@import '../scss/category.scss';
+@import '../components/Logo/Logo.scss';
+@import '../components/Footer/footer.scss';
+@import '../components/CategoryList/CategoryList.scss';
+@import '../components/NavigationLink/NavigationLink.scss';
+@import '../components/Header/Header.scss';
+@import '../components/Header/Navigation.scss';
+@import '../components/NavLinkArrow/NavLinkArrow.scss';
+@import '../scss/Contacts.scss';
+@import '../components/Form/Form.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure {
+  margin: 0;
+}
+
+ul,
+ol,
+dl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.app {
+  font-family: 'Gerbera', sans-serif;
+  display: flex;
+  flex-direction: column;
+  column-gap: 50px;
+  background-color: #EBEAE8;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: space-between;
+  animation: open .8s ease;
+
+  @keyframes open {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    overflow-y: auto;
+  }
+}
+
+.language-button {
+  border: none;
+  text-transform: uppercase;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  background: none;
+}
