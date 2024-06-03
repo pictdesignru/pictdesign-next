@@ -1,4 +1,6 @@
 import "./globals.scss";
+import { Suspense } from "react";
+import Preloader from "@/components/Preloader/Preloader";
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 import Error from "../components/error";
 import Footer from "@/components/Footer/Footer";
@@ -18,6 +20,7 @@ export default async function RootLayout({ children }) {
     <html lang="ru">
       <body className='app'>
         <ErrorBoundary fallback={<Error />} >
+          <Suspense fallback={<Preloader />} />
           <Header categories={categories}/>
           {children}
           <Footer categories={categories}/>

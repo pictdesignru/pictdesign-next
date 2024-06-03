@@ -1,5 +1,24 @@
+.contact-form {
+  padding: 150px 8% 100px 8%;
+  max-width: 1920px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: flex-start;
+  animation: open .8s ease;
+  width: 100%;
+
+  &__wrapper {
+    grid-column: 3/8;
+
+    @include desktop {
+      grid-column: 1/4;
+    }
+  }
+}
+
 .form {
-  margin-top: 70px;
+  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;

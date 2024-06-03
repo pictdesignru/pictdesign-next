@@ -16,10 +16,21 @@
 @import '../components/NavLinkArrow/NavLinkArrow.scss';
 @import '../scss/Contacts.scss';
 @import '../components/Form/Form.scss';
+@import '../components/Preloader/Preloader.scss';
+@import '../scss/notFound.scss';
+@import '../scss/Popup.scss';
 
 body {
   margin: 0;
   padding: 0;
+}
+
+body.popup {
+  overflow: unset;
+}
+
+body.popup_active {
+  overflow: hidden;
 }
 
 h1,

@@ -78,7 +78,7 @@
     .card__title {
       margin: 0;
       text-align: left;
-      @include adaptive-font(21, 14);
+      @include adaptive-font(21, 18);
       font-weight: bold;
 
       @include desktop {

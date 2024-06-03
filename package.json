@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "axios": "^1.6.8",
+    "imask": "^7.6.1",
     "next": "14.2.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-imask": "^7.6.1",
     "sass": "^1.75.0",
     "styled": "^1.0.0",
     "styled-components": "^6.1.8",

@@ -17,14 +17,7 @@ export default async function Page() {
     <>
       <MainSwiper projects={sliderPosts} />
       <ProjectList projects={posts} />
-      <div className="contacts contacts_project">
-        <div className="contacts__wrapper">
-          <h2>
-            Хотите также? Давайте обсудим!
-          </h2>
-          <Form inputs={inputs} buttonText={'Отправить'}/>
-        </div>
-      </div>
+      <Form title={"Хотите также? Давайте обсудим!"} inputs={inputs} buttonText={'Отправить'} />
     </>
   );
 }
