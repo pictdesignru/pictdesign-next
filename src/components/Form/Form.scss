@@ -8,6 +8,10 @@
   animation: open .8s ease;
   width: 100%;
 
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   &__wrapper {
     grid-column: 3/8;
 

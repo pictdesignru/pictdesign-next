@@ -16,11 +16,7 @@ export default async function Project({ params }) {
     return (
         <>
             <ProjectPar project={project.project} />
-            <div className="contacts contacts_project">
-                <div className="contacts__wrapper">
-                    <Form title={"Хотите также? Мы вам перезвоним!"} inputs={inputs} buttonText={'Отправить'} />
-                </div>
-            </div>
+            <Form title={"Хотите также? Мы вам перезвоним!"} inputs={inputs} buttonText={'Отправить'} />
             <h3 className="project__recommend-title">Посмотрите еще:</h3>
             <ProjectList projects={project.recProjects} />
         </>
